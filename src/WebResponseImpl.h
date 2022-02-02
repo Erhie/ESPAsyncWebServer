@@ -58,9 +58,9 @@ class AsyncAbstractResponse: public AsyncWebServerResponse {
     bool _sourceValid() const { return false; }
     virtual size_t _fillBuffer(uint8_t *buf __attribute__((unused)), size_t maxLen __attribute__((unused))) { return 0; }
 };
-
+// TEMPLATE_PLACEHOLDER changed by Erhie from % to `
 #ifndef TEMPLATE_PLACEHOLDER
-#define TEMPLATE_PLACEHOLDER '%'
+#define TEMPLATE_PLACEHOLDER '`'
 #endif
 
 #define TEMPLATE_PARAM_NAME_LENGTH 32
